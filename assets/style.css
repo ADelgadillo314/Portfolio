@@ -10,12 +10,12 @@ body {
 .picsize{
         width: 60px;
         height: 60px;
+        margin: 10px;
 }
 
 .aboutMe{
         background-color: white;
-        padding: 20px;
-        
+        padding: 20px;      
 }
 
 hr{
@@ -79,5 +79,6 @@ footer{
 .imgheight{
         height: 200px;
 }
+
 
       
