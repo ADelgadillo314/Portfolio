@@ -3,102 +3,124 @@
 
 <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        <title>Angel Delgadillo Jr</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
                 crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
+
 
         <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-                <h1 class="navbar-brand name text-light" href="#">Angel Delgadillo Jr</h1>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+                <div class="container">
+                        <a class="navbar-brand bg-info p-3" href="index.html">Angel Delgadillo Jr</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links" aria-controls="links" aria-expanded="true"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                        <a class="nav-link" href="./index.html">AboutMe
-                                                <span class="sr-only">(current)</span>
-                                        </a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="./contact.html">Contact</a>
-                                </li>
-                        </ul>
+                        <div class="collapse navbar-collapse float-right" id="links">
+                                <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                                <a class="nav-link" href="index.html">About</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                                <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                                <a class="nav-link" href="AngelDelgadilloJr.pdf" download>Resume</a>
+                                        </li>
+                                </ul>
+                        </div>
                 </div>
         </nav>
 
-        <div class="container topmarg mb-10">
+
+        <div class="container">
                 <div class="row">
-                        <!-- About Me -->
-                        <div class="col-md-8 col-xs-12 aboutMe rounded">
+                        <div class="col-md-7 aboutMe rounded">
                                 <div>
                                         <h2 class="aquamarine">Portfolio</h2>
                                         <hr>
                                 </div>
-                                <div class="project float-left">
-                                        <img class="imgwidth imgheight rounded" src="./images/brickbreakers.jpg" alt="Brick Breakers ">
-                                        <h4 class="lbl imgwidth">BrickBreakers</h4>
-                                </div>
-                                <div class="project float-left">
-                                        <img class="imgwidth imgheight rounded" src="./images/arduino.jpeg" alt="Arduino">
-                                        <h4 class="lbl imgwidth">Arduino</h4>
-                                </div>
-                                <div class="project float-left">
-                                        <img class="imgwidth imgheight rounded" src="./images/pokelogo.png" alt="Pokemon Hangman">
-                                        <h4 class="lbl imgwidth">Hangman</h4>
-                                </div>
-                                <div class="project float-left">
-                                        <img class="imgwidth imgheight rounded" src="./images/sokoban.jpg" alt="Sokoban">
-                                        <h4 class="lbl imgwidth">Sokoban</h4>
-                                </div>
+                                <a href="https://github.com/ADelgadillo314/Brick-Breakers" target="_blank">
+                                        <div class="project float-left">
+                                                <img class="imgwidth imgheight rounded" src="./images/brickbreakers.jpg" alt="Brick Breakers ">
+                                                <h4 class="lbl imgwidth">BrickBreakers</h4>
+                                        </div>
+                                </a>
+
+                                <a href="https://github.com/ADelgadillo314/Arduino-Board-Voice-Activated-Light-switch-" target="_blank">
+                                        <div class="project float-left">
+                                                <img class="imgwidth imgheight rounded" src="./images/arduino.jpeg" alt="Arduino">
+                                                <h4 class="lbl imgwidth">Arduino</h4>
+                                        </div>
+                                </a>
+
+
+                                <a href="https://github.com/ADelgadillo314/PokemonHangman" target="_blank">
+                                        <div class="project float-left">
+                                                <img class="imgwidth imgheight rounded" src="./images/pokelogo.png" alt="Pokemon Hangman">
+                                                <h4 class="lbl imgwidth">Hangman</h4>
+                                        </div>
+                                </a>
+
+                                <a href="https://github.com/ADelgadillo314/Sokoban-AStar-Search" target="_blank">
+                                        <div class="project float-left">
+                                                <img class="imgwidth imgheight rounded" src="./images/sokoban.jpg" alt="Sokoban">
+                                                <h4 class="lbl imgwidth">Sokoban</h4>
+                                        </div>
+                                </a>
+
+                                <a href="https://github.com/ADelgadillo314/Ticketmaster-Events" target="_blank">
+                                        <div class="project float-left">
+                                                <img class="imgwidth imgheight rounded" src="./images/ticketmaster.jpg" alt="tickermaster app">
+                                                <h4 class="lbl imgwidth">TicketMaster</h4>
+                                        </div>
+                                </a>
+                                <!-- <a href="" target="_blank">
+                                        <div class="project float-left">
+                                                <img class="imgwidth imgheight rounded" src="./images/" alt="">
+                                                <h4 class="lbl imgwidth"></h4>
+                                        </div>
+                                </a> -->
+
 
                         </div>
 
                         <!-- Contact Me  -->
-                        <div class="col-md-4 col-xs-12">
-                                <div class="card center-block" style="width: 18rem;">
-                                        <div class="card-body ">
-                                                <h4 class="card-title aquamarine">Connect With Me</h4>
-                                                <hr>
-                                                <div class="row ">
-                                                        <div class="col-xsx-4">
-                                                                <a href="https://www.linkedin.com/in/angeldelgadillojr/">
-                                                                        <img class="img-responsive picsize" src="./images/linkedin.png" alt="LinkedIn">
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-xs-4">
-                                                                <a href="https://github.com/ADelgadillo314">
-                                                                        <img class="img-responsive picsize" src="./images/github.png" alt="Github">
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-xs-4">
-                                                                <a href="https://stackoverflow.com/users/9297966/adelgadillo314">
-                                                                        <img class="img-responsive picsize" src="./images/stackoverflow.png" alt="Stack Overflow">
-                                                                </a>
-                                                        </div>
+                        <section class="bg-light h-25 col-md-4 ml-4 p-2 rounded">
 
-                                                </div>
-                                        </div>
+
+                                <h3 class=" aquamarine text-center">Connect with Me</h3>
+                                <hr>
+                                <div class="text-center">
+                                        <a href="https://github.com/ADelgadillo314" target="_blank">
+                                                <img src="images/github.png" class="img-fluid w-25 mr-4 ml-4 mb-4" alt="GitHub" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/angeldelgadillojr/" target="_blank">
+                                                <img src="images/linkedin.png" class="img-fluid w-25 mr-4 ml-4 mb-4" alt="LinkedIn" />
+                                        </a>
+                                        <a href="https://adelgadillo.smugmug.com/" target="_blank">
+                                                <img src="images/smugmug.png" class="img-fluid w-25 h-25 mr-4 ml-4 mb-4" alt="LinkedIn" />
+                                        </a>
+
                                 </div>
-                        </div>
+
+
+                        </section>
                 </div>
         </div>
 
-        <footer class="bg-dark text-light center-on-small-only mt-20 p-4">
+        <footer class="bottom-0 bg-dark text-light center-on-small-only mt-4 p-4">
                 <div class="container-fluid text-center">
-                        Copyright &copy; 2018 Angel Delgadillo Jr
+                        Copyright &copy; 2017 Your Name
                 </div>
         </footer>
-</body>
 
 </html>
