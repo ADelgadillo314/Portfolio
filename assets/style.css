@@ -1,5 +1,14 @@
 body {
         background-image: url('../images/circles-light.png');
+        height: 100%;
+}
+
+html{
+        height: 100%;
+}
+
+.container{
+        height: 100%       
 }
 
 .profileimage{
