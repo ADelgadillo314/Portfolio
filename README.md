@@ -1,4 +1,4 @@
-# Bootstrap-Portfolio
+# Portfolio
 
 Check it out! https://adelgadillo314.github.io/Portfolio/
 
