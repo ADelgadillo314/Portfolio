@@ -1,98 +1,442 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-        <meta charset="UTF-8">
-        <title>Angel Delgadillo Jr</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-                crossorigin="anonymous">
-
-
-        <link rel="stylesheet" type="text/css" href="./assets/style.css">
-</head>
-
-<body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-                <div class="container">
-                        <a class="navbar-brand bg-info p-3" href="index.html">Angel Delgadillo Jr</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links" aria-controls="links" aria-expanded="true"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse float-right" id="links">
-                                <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                                <a class="nav-link" href="index.html">About</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                                <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                                <a class="nav-link" href="AngelDelgadilloJr.pdf" download>Resume</a>
-                                        </li>
-                                </ul>
-                        </div>
-                </div>
-        </nav>
-
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Angel Delgadillo | Software Engineer</title>
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Angel Delgadillo | Software Engineer">
+    <meta property="og:description" content="I want to make things that make a difference.">
+    <meta property="og:site_name" content="Angel Delgadillo | Software Engineer">
+    <meta name="description" content="I want to make things that make a difference.">
+    <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <!-- Navigation Menu-->
+    <nav ng-class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+            <h1>Angel Delgadillo<span class="brown-text light">Software Engineer</span></h1></a></li>
+        <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+        <li class="bold"><a aria-label="Open Angel's resume in a new tab" href="AngelDelgadilloJr.pdf" download target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+      </ul>
+    </nav>
+    <nav class="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <div class="name-title"><a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Angel Delgadillo</a><span class="brown-text light">Software Engineer</span></div>
+    </nav>
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+        <li class="bold"><a aria-label="Open Angel's Resume in a new tab" href="AngelDelgadilloJr.pdf" download target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+      </ul>
+    </nav>
+    <!-- Main Content-->
+    <main>
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
         <div class="container">
-                <div class="row">
-                        <!-- About Me -->
-                        <div class="col-md-6 aboutMe rounded">
-                                <div>
-                                        <h2 class="aquamarine">About Me</h2>
-                                        <hr>
-                                </div>
-                                <img class="profileimage mr-4 float-left img-responsive" src="./images/profile.PNG" />
-                                <p class="tnr">
-                                        Hey I am Angel! I am a highly motivated, insatiably curious, self-directed problem solver who attacks challenges head on.
-                                        I have a year of experience in software development and five years experience in
-                                        working in customer service. I currently work from Omron Delta Tau where I am instrumental
-                                        in creating several controls and tools for the company's IDE using WPF, XAML, and
-                                        MySQL in the backend. I am also familiar with other technologies including: HTML,
-                                        JavaScript, CSS, Java, Git, OCaml, Lisp and Amazon Echo AVS.
-                                </p>
-                                <p class="tnr">
-                                        Fun Fact! I graduated from UCLA with a degree in Computer science and Linguistics in 2016 where I had the opportunity to
-                                        be the Mascot and a cheerleader for UCLA at games and events across the country and
-                                        internationally.
-                                </p>
-                        </div>
-
-                        <!-- Contact Me  -->
-                        <section class="bg-light h-25 col-md-4 ml-4 p-2 rounded">
-
-
-                                <h3 class=" aquamarine text-center">Connect with Me</h3>
-                                <hr>
-                                <div class="text-center">
-                                                <a href="https://github.com/ADelgadillo314" target="_blank">
-                                                        <img src="images/github.png" class="img-fluid w-25 mr-4 ml-4 mb-4" alt="GitHub" />
-                                                </a>
-                                                <a href="https://www.linkedin.com/in/angeldelgadillojr/" target="_blank">
-                                                        <img src="images/linkedin.png" class="img-fluid w-25 mr-4 ml-4 mb-4" alt="LinkedIn" />
-                                                </a>
-                                                <a href="https://adelgadillo.smugmug.com/" target="_blank">
-                                                        <img src="images/smugmug.png" class="img-fluid w-25 h-25 mr-4 ml-4 mb-4" alt="LinkedIn" />
-                                                </a>
-                                        
-                                </div>
-
-
-                        </section>
-                </div>
+          <h2>I want to <span class="teal">impact people</span><br>by <span class="underline">doing what I love</span>.</h2>
         </div>
-
-        <footer class="bottom-0 bg-dark text-light center-on-small-only mt-4 p-4">
-                <div class="container-fluid text-center">
-                        Copyright &copy; 2018 Angel Delgadillo Jr
+      </section>
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
+        <div class="container flow-text">
+          <blockquote>
+            <h2>Highly motivated, insatiably curious, self-directed problem solver who attacks challenges head on.</h2>
+          </blockquote>
+          <p>I’ve always sought out opportunities and challenges that are meaningful to me. Thats why my previous work experience and my hobbies revolve around making a difference to peoples experience and solving problems. I have work 5+ years in customer service, served as a ambassador to UCLA as a cheerleader for 4 years, and put the rest of time to learning new and emerging technologies that will benefit peoples lives. I've never stopped engaging my passion to help others and solve problems. </p>
+          <p>As a software developer, I have a overwhelming itch to solve problems efficiently, discover new ways to tackle problems and create tools and applications that help users. I am extremely excited to make a impact in my field and at a growing company.</p>
+          <p><strong>Current Focus</strong>:&nbsp;
+		  <a  href="https://bootcamp.uclaextension.edu/coding/">
+			Web Development 
+		  </a>&nbsp;//&nbsp;
+		  <a  href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs">
+			WPF
+		  </a>&nbsp;//&nbsp;
+		  <a href="https://nodejs.org/en/">
+			Node.js
+		  </a></p>
+        </div>
+      </section>
+      <section id="experience" class="section scrollspy">
+        <h3 class="page-title white-text teal">Experience</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="http://www.deltatau.com/DT_IndexPage/index.aspx" target="_blank"><img alt="ODT Logo" src="static/img/odt.png" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="http://www.deltatau.com/DT_IndexPage/index.aspx" target="_blank" class="teal-text hoverline">Omron Delta Tau</a></span></p>
                 </div>
-        </footer>
-
+              </div>
+              <div class="role brown-text">Software Engineer</div>
+              <p><em class="grey-text">Motion Controller company that gives users flexibility and power in creating motion programs using simple software and IDE. </em></p>
+              <h6>Develop Integrated Development Environment</h6>
+              <ul>
+                <li>Contribute core features across entire code base (20k+ lines of code, 50+ pulls)</li>
+                <li> Design, innovate and implement new features to the backend and frontend from start to finish.</li>
+                <li>Introduced methodologies and practices that enhanced product reliability including, unit testing, WPF, and Model View ViewModel Implementation.</li>
+                <li>Collaborate with the software, hardware and Firmware departments, company wide to produce efficient, reliable, and user friendly code.</li>
+                <li>Tools: C#, XAML, MySQL, Balsamiq, Linux Shell, Telerik Unit Testing</li>
+              </ul>
+              <h6>Accomplishments</h6>
+              <ul>
+                <li>Introduced and demonstrated unit testing to the California branch leading to cleaner and more effective code.</li>
+                <li>Designed and implemented the Basic Tuning tool allowing users to tune motors simply and quickly.</li>
+                <li>Wrote 10k+ lines of code to implement a Troubleshooter that thoroughly tests all components of a system of motors.</li>
+              </ul>
+            </div>
+            <div class="card-action"><span>April 2017 - Present  |  Chatsworth, CA</span></div>
+          </div>
+		 	  
+		  		  <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="https://www.tesla.com/" target="_blank"><img alt="Tesla Logo" src="static/img/tesla.png" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="https://www.tesla.com/" target="_blank" class="teal-text hoverline">Tesla Motors</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">Product Specialist</div>
+              <p><em class="grey-text">Tesla is primarily a energy company. Tesla's mission is to accelerate the world's transition to sustainable energy. </em></p>
+              <ul>
+                <li>Provided a fun educational experience for customers who come into Tesla and assisted in closing sales</li>
+                <li>Identified future Tesla prospects and encouraged them to get behind the wheel of a Tesla product for themselves.</li>
+                <li>Expertly relayed any information about energy, Tesla vehicles and Powerwalls that a customer may wish to know.</li>
+              </ul>
+            </div>
+            <div class="card-action"><span>December 2016 - April 2017  |  Century City, CA</span></div>
+          </div>
+		  
+		  <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="https://housing.ucla.edu/" target="_blank"><img alt="Housing Logo" src="static/img/ucla-apartments.png" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="https://housing.ucla.edu/" target="_blank" class="teal-text hoverline">UCLA Apartments</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">Apartment Coordinator</div>
+              <p><em class="grey-text">Provide housing services to over 30,000 UCLA undergraduates in 6 university dorms buildings.</em></p>
+              <ul>
+                <li>While working on a team, collaborated with the University Maintenance Staff, University of California Police Department, and UCLA Housing in responding to Emergency situations and ensured the safety and security of UCLA property</li>
+                <li>Respond promptly to emergency calls like plumbing issues, fire alarms, police reports and lockouts throughout 24 hour shifts. </li>
+                <li>Provided information about UCLA campus and the surrounding areas 24/7 </li>
+              </ul>
+            </div>
+            <div class="card-action"><span>June 2014 - July 2017  |  Westwood, CA</span></div>
+          </div>
+		  
+		  <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="https://housing.ucla.edu/" target="_blank"><img alt="Housing Logo" src="static/img/ucla-housing.jpg" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="https://housing.ucla.edu/" target="_blank" class="teal-text hoverline">UCLA Sproul Front Desk</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">Front Desk Supervisor</div>
+              <p><em class="grey-text">Provide housing services to over 30,000 UCLA undergraduates in 6 university dorms buildings.</em></p>
+              <ul>
+                <li>Managed and delegated rooms for several conferences and summer camps in six buildings for over 40k guests</li>
+                <li>Supervised in all operations, including $1,000 cash reports, nightly housing availability audits, guest check in/check out and evacuation in emergency situations</li>
+                <li>Provided information about UCLA campus and the surrounding areas 24/7 </li>
+              </ul>
+            </div>
+            <div class="card-action"><span>May 2013 - September 2016  |  Westwood, CA</span></div>
+          </div>
+		  
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
+        <div class="container">
+          <div class="row">
+            <!-- TicketMaster Events Map-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img src="static/img/ticketmaster.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">
+					TicketMaster Events
+					<i class="mdi-navigation-more-vert right"></i></span>
+					<p>Utilizes Ticketmaster's and Google Maps API to show events in a local area.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>Bootstrap CSS</strong> frontend</li>
+                    <li><strong>Client-side rendering</strong> via AJAX</li>
+                    <li>Integration with <strong>TicketMaster API</strong></li>
+                    <li>Integration with <strong>Google Maps API</strong></li>
+                    <li>Handled <strong>Reverse Geo-coding </strong></li>
+                  </ul>
+                  <div class="card-action">
+					<a href="https://adelgadillo314.github.io/Ticketmaster-Events/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a>
+					<a href="https://github.com/ADelgadillo314/Ticketmaster-Events" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+			
+			
+			<!-- Brickbreakers-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img src="static/img/brickbreakers.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">
+					Brickbreakers
+					<i class="mdi-navigation-more-vert right"></i></span>
+					<p>Creates a simple desktop Brickbreakers game.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>C++</strong> implementation</li>
+                    <li><strong>OpenGL</strong> for rendering</li>
+                  </ul>
+                  <div class="card-action">
+					<a href="https://www.youtube.com/watch?v=YoWVE5cwmP8" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a>
+					<a href="https://github.com/ADelgadillo314/Brick-Breakers" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+			
+			<!-- Arduino-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img src="static/img/arduino.jpeg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">
+					Arduino Bluetooth light switch
+					<i class="mdi-navigation-more-vert right"></i></span>
+					<p>Code for using an Arduino Board, 2 servos, and a bluetooth chip to create a voice activated light switch</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>C++ and Arduino library</strong> implementation</li>
+                    <li>Designed structure for laying out <strong>components</strong> </li>
+                  </ul>
+                  <div class="card-action">
+					<a href="https://github.com/ADelgadillo314/Arduino-Board-Voice-Activated-Light-switch-/blob/master/IMAG0891.jpg" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a>
+					<a href="https://github.com/ADelgadillo314/Arduino-Board-Voice-Activated-Light-switch-" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+			
+			<!-- Pokemon hangman-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img src="static/img/pokelogo.png" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">
+					Pokemon Hangman
+					<i class="mdi-navigation-more-vert right"></i></span>
+					<p>A Pokemon Themed Game of Hangman! Catch 'em all!</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>Javascript and jQuery </strong> for logic</li>
+                    <li><strong>Bootstrap CSS</strong> frontend</li>
+                  </ul>
+                  <div class="card-action">
+					<a href="https://adelgadillo314.github.io/PokemonHangman/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a>
+					<a href="https://github.com/ADelgadillo314/PokemonHangman" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+			
+			
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text teal">Skills</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">HTML</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/html5.png" class="responsive-img">HTML5</div>
+                <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">JSX</div>
+                <div class="col s4 m2"><img alt="" src="static/img/handlebars.png" class="responsive-img">Handlebars</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">CSS</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/css3.png" class="responsive-img">CSS3</div>
+                <div class="col s4 m2"><img alt="" src="static/img/bootstrap.png" class="responsive-img">Bootstrap</div>
+                <div class="col s4 m2"><img alt="" src="static/img/materialize.png" class="responsive-img">Materialize</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Javascript</h4>
+              <div class="row text-center">
+			                  <div class="col s4 m2"><img alt="" src="static/img/nodejs.png" class="responsive-img">Node</div>
+                <div class="col s4 m2"><img alt="" src="static/img/express.png" class="responsive-img">Express</div>
+                <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">React</div>
+                <div class="col s4 m2"><img alt="" src="static/img/javascript.png" class="responsive-img">Javascript</div>
+                <div class="col s4 m2"><img alt="" src="static/img/jquery.png" class="responsive-img">jQuery</div>
+                <div class="col s4 m2"><img alt="" src="static/img/sequelize.png" class="responsive-img">Sequelize</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Back-End</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/mysql.png" class="responsive-img">MySQL</div>
+                <div class="col s4 m2"><img alt="" src="static/img/mongodb.png" class="responsive-img">MongoDB</div>
+              </div>
+            </div>
+          </div>
+		  <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">WPF</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/csharp.png" class="responsive-img">C#</div>
+                <div class="col s4 m2"><img alt="" src="static/img/xaml.png" class="responsive-img">XAML</div>
+                <div class="col s4 m2"><img alt="" src="static/img/tfs.png" class="responsive-img">TFS</div>
+              </div>
+            </div>
+          </div>
+		  
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/github.png" class="responsive-img">Github</div>
+                <div class="col s4 m2"><img alt="" src="static/img/heroku.png" class="responsive-img">Heroku</div>
+                <div class="col s4 m2"><img alt="" src="static/img/latex.png" class="responsive-img">Latex</div>
+				 <div class="col s4 m2"><img alt="" src="static/img/smugmug.png" class="responsive-img">SmugMug</div>
+                <div class="col s4 m2"><img alt="" src="static/img/photoshop.png" class="responsive-img">Photoshop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--       <section id="awards" class="section scrollspy">
+        <h3 class="page-title white-text teal">Awards</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p><span class="card-title"><a href="http://startupinstitute.com" target="_blank" class="teal-text hoverline">Student Choice Award</a></span></p>
+                  <p class="brown-text">Startup Institute - Full Time Web Development | April 2017</p>
+                  <ul>
+                    <li>Awarded by students in the Full-Time Web Development track to one instructor as recognition for "outstanding teaching, listening, mentoring."</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p><span class="card-title"><a href="https://wespire.com" target="_blank" class="teal-text hoverline">Inspired By You Award</a></span></p>
+                  <p class="brown-text">WeSpire | June 2016</p>
+                  <ul>
+                    <li>Quarterly award given to a team member who exemplifies WeSpire's purpose, vision, and values, goes above and beyond in their role to make a particularly positive impact on the company.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section> -->
+	  
+      <section id="education" class="section scrollspy">
+        <h3 class="page-title white-text teal">Education</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p><span class="card-title"><a href="http://www.ucla.edu/" class="teal-text hoverline">University of California, Los Angeles</a></span></p>
+                  <p class="brown-text">Los Angeles, CA  | 2012 - 2017</p>
+                  <ul>
+                    <li>B.A. in Computer Science and Linguistics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p><span class="card-title"><a href="https://bootcamp.uclaextension.edu/coding/" class="teal-text hoverline">UCLA Web Development Bootcamp</a></span></p>
+                  <p class="brown-text">Los Angeles, CA | 2018</p>
+                  <ul>
+                    <li>Certificate of Completion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+          <p><a aria-label="Email Angel" href="mailto:ADelgadillo314@ucla.edu" data-position="top" data-tooltip="Email Angel" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i><a alt="" href="mailto:ADelgadillo314@ucla.edu" class="hoverline">ADelgadillo314@ucla.edu</a></a></p>
+          <p><a aria-label="View Angel on GitHub" href="http://github.com/Adelgadillo314" target="_blank" data-position="top" data-tooltip="View Angel on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i><a alt="" href="http://github.com/Adelgadillo314" class="hoverline">github.com/ADelgadillo314</a></a></p>
+          <p><a aria-label="View Angel on LinkedIn" href="https://www.linkedin.com/in/angeldelgadillojr/" target="_blank" data-position="top" data-tooltip="View Angel on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i><a alt="" href="https://www.linkedin.com/in/angeldelgadillojr/" class="hoverline">linkedin.com/in/angeldelgadillojr/</a></a></p>
+        </div>
+      </section>
+    </main>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+            menuWidth: 190, // Default is 240
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          }
+        );
+      });
+    </script>
+  </body>
 </html>
