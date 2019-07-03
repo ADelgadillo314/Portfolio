@@ -1,6 +1,7 @@
 # Portfolio
 
-Check it out! https://adelgadillo314.github.io/Portfolio/
+Check it out! https://AngelDelgadilloJr.com
+
 
 Uses: 
 - HTML 
